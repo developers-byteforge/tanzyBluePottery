@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  title: "Tanzy's Bl... - Handcrafted Pottery & Ceramics"
+  title: "Tanzy's Blue Pottery - Handcrafted Pottery & Ceramics"
 };
 
 export default function RootLayout({ children }) {
