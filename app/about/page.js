@@ -68,11 +68,12 @@ export default function AboutPage() {
                 <a href="/#collections">Collections <span class="dropdown-arrow"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
-                    <li><a href="/collections/holi">Holi Collection</a></li>
+                    <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
+            <li><a href="/achievements">Achievements</a></li>
             <li><a href="/#contact">Contact</a></li>
         </ul>
         <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
@@ -91,11 +92,12 @@ export default function AboutPage() {
                 <button class="mobile-dropdown-toggle">Collections <span class="mobile-dropdown-arrow">▾</span></button>
                 <ul class="mobile-dropdown-list">
                     <li><a href="/collections/diwali">Diwali</a></li>
-                    <li><a href="/collections/holi">Holi</a></li>
+                    <li><a href="/collections/pichwai">Pichwai</a></li>
                     <li><a href="/collections/christmas">Christmas</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
+            <li><a href="/achievements">Achievements</a></li>
             <li><a href="/#contact">Contact</a></li>
         </ul>
     </div>
@@ -114,11 +116,9 @@ export default function AboutPage() {
                 <img src="/images/founder.png" alt="Tanzy - Founder of Tanzy's Blue Pottery">
             </div>
             <div class="founder-info">
-                <h3>Tanzy Sharma</h3>
-                <span class="founder-role">Founder & Lead Artisan</span>
-                <p>With over 20 years of experience in the art of pottery, Tanzy founded Tanzy's Blue Pottery with a vision to bring traditional Indian blue pottery techniques to a modern audience. Her journey began in a small studio in Jaipur, where she spent years learning from master artisans.</p>
-                <p>Tanzy's passion goes beyond creating beautiful pieces — she believes in preserving India's rich ceramic heritage while making it accessible and relevant for today's homes. Her signature style blends intricate Rajasthani patterns with contemporary minimalism.</p>
-                <p>Under her leadership, Tanzy's Blue Pottery has grown from a one-woman studio to a collaborative space where tradition meets innovation, and every piece carries a story shaped by decades of dedication.</p>
+                <h3>Tanya Bhasin</h3>
+                <p>Tanya Bhasin is the founder and driving force behind Tanzy’s Blue Pottery (TBP), a venture dedicated to reviving the traditional craft of Jaipur’s Blue Pottery. Her journey began while pursuing her Master’s degree, when a research project on dying art forms introduced her to the struggles faced by local artisans. Moved by their circumstances, she founded TBP with a mission to preserve this heritage craft while creating meaningful employment opportunities, especially for women artisans
+</p>
             </div>
         </div>
 
@@ -128,11 +128,10 @@ export default function AboutPage() {
                 <img src="/images/cofounder.png" alt="Arjun - Co-Founder of Tanzy's Blue Pottery">
             </div>
             <div class="founder-info">
-                <h3>Arjun Mehta</h3>
-                <span class="founder-role">Co-Founder & Creative Director</span>
-                <p>Arjun joined Tanzy's Blue Pottery with a background in design and a deep appreciation for handmade craftsmanship. His eye for contemporary design and understanding of modern aesthetics complements Tanzy's traditional expertise perfectly.</p>
-                <p>He oversees the creative direction of every collection, ensuring that each piece is not only artistically beautiful but also functionally designed for everyday use. Arjun is passionate about creating pottery that seamlessly fits into modern living spaces.</p>
-                <p>Together with Tanzy, he has introduced workshops and hands-on experiences that allow customers to connect with the ancient art of pottery firsthand — turning passive appreciation into active creation.</p>
+                <h3>Reema Bhasin</h3>
+                <p>Reema Bhasin is the Co-founder of Tanzy’s Blue Pottery (TBP), where she plays a key role in nurturing the brand’s vision of preserving Jaipur’s iconic blue pottery while supporting and empowering artisan communities. Without her unwavering support, the brand wouldn’t be where it is right now. She oversees the creative direction of every collection, ensuring that each piece is not only artistically beautiful but also functionally designed for everyday use. Reema is passionate about creating pottery that seamlessly fits into modern living spaces.
+Together with Tanya, she has introduced workshops and hands-on experiences that allow customers to connect with the ancient art of pottery firsthand — turning passive appreciation into active creation.
+</p>
             </div>
         </div>
     </div>
@@ -142,10 +141,10 @@ export default function AboutPage() {
         <h2>Our Studio & Store</h2>
         <div class="store-images">
             <div class="store-img">
-                <img src="/images/store-interior.png" alt="Inside the Tanzy's Blue Pottery pottery studio">
+                <img src="/images/workingPlace1.jpeg" alt="Inside the Tanzy's Blue Pottery pottery studio">
             </div>
             <div class="store-img">
-                <img src="https://images.unsplash.com/photo-1767476106330-4e5a0b4dcf94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwyfHxwb3R0ZXJ5JTIwd29ya3Nob3AlMjBhcnRpc2FufGVufDF8fHx8MTc3MzMwMTk3OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Pottery workshop area">
+                <img src="/images/workingPlace2.jpeg" alt="Pottery workshop area">
             </div>
         </div>
     </section>
@@ -177,7 +176,7 @@ export default function AboutPage() {
                 <h4>Collections</h4>
                 <ul>
                     <li><a href="/#collections">Diwali Collection</a></li>
-                    <li><a href="/#collections">Holi Collection</a></li>
+                    <li><a href="/#collections">Pichwai Collection</a></li>
                     <li><a href="/#collections">Christmas Collection</a></li>
                 </ul>
             </div>
@@ -185,7 +184,7 @@ export default function AboutPage() {
                 <h4>Information</h4>
                 <ul>
                     <li><a href="#">Care Instructions</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="/faq">FAQs</a></li>
                 </ul>
             </div>
         </div>

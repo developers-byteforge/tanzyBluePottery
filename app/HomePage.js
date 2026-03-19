@@ -18,7 +18,7 @@ export default function HomePage() {
         }, observerOptions);
 
         const animatedElements = document.querySelectorAll(
-            '.section-header, .about-image, .about-text, .gallery-item, .process-step, .testimonial-card, .contact-info, .contact-form, .fade-in, .hands-on-image, .hands-on-text, .collection-card'
+            '.section-header, .about-image, .about-text, .gallery-item, .achievement-card, .testimonial-card, .contact-info, .contact-form, .fade-in, .hands-on-image, .hands-on-text, .collection-card'
         );
 
         animatedElements.forEach((el) => observer.observe(el));
@@ -153,12 +153,12 @@ export default function HomePage() {
                 <a href="#collections">Collections <span class="dropdown-arrow"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
-                    <li><a href="/collections/holi">Holi Collection</a></li>
+                    <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
-            <li><a href="#process">Process</a></li>
+            <li><a href="/achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
@@ -177,12 +177,12 @@ export default function HomePage() {
                 <button class="mobile-dropdown-toggle">Collections <span class="mobile-dropdown-arrow">▾</span></button>
                 <ul class="mobile-dropdown-list">
                     <li><a href="/collections/diwali">Diwali</a></li>
-                    <li><a href="/collections/holi">Holi</a></li>
+                    <li><a href="/collections/pichwai">Pichwai</a></li>
                     <li><a href="/collections/christmas">Christmas</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
-            <li><a href="#process">Process</a></li>
+            <li><a href="/achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
@@ -191,13 +191,13 @@ export default function HomePage() {
     <section id="home" class="hero">
         <div class="hero-carousel">
             <div class="carousel-slide active">
-                <img src="https://images.unsplash.com/photo-1760764541302-e3955fbc6b2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwxfHxwb3R0ZXJ5JTIwY2VyYW1pY3MlMjBoYW5kbWFkZXxlbnwxfDB8fHwxNzczMzAxOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Handcrafted pottery collection" loading="eager">
+                <img src="/images/hero/slide-1.jpg" alt="Handcrafted pottery collection" loading="eager">
             </div>
             <div class="carousel-slide">
-                <img src="https://images.unsplash.com/photo-1767476106330-4e5a0b4dcf94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwyfHxwb3R0ZXJ5JTIwd29ya3Nob3AlMjBhcnRpc2FufGVufDF8fHx8MTc3MzMwMTk3OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Artisan pottery workshop" loading="eager">
+                <img src="/images/hero/slide-2.jpg" alt="Artisan pottery workshop" loading="eager">
             </div>
             <div class="carousel-slide">
-                <img src="https://images.unsplash.com/photo-1629380321590-3b3f75d66dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwyfHxwb3R0ZXJ5JTIwY2VyYW1pY3MlMjBoYW5kbWFkZXxlbnwxfDB8fHwxNzczMzAxOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Blue ceramic artisan vase" loading="eager">
+                <img src="/images/hero/slide-3.jpg" alt="Blue ceramic artisan vase" loading="eager">
             </div>
         </div>
         <div class="carousel-dots">
@@ -207,8 +207,10 @@ export default function HomePage() {
         </div>
         <div class="hero-content">
             <div class="hero-subtitle">Handcrafted with Love</div>
-            <h1 class="hero-title">Where Clay Meets <strong>Art</strong></h1>
-            <p class="hero-description">Each piece tells a story, shaped by skilled hands and fired with passion. Discover the timeless beauty of artisanal pottery.</p>
+            <h1 class="hero-title">Heritage & Craft
+            <p class="hero-description">Reviving Jaipur’s Blue Pottery, One Piece at a Time.
+            Where Heritage Meets Handcrafted Beauty</p>
+
             <a href="#gallery" class="cta-button">Explore Collection</a>
         </div>
         <div class="scroll-indicator">
@@ -231,9 +233,11 @@ export default function HomePage() {
                 </div>
             </div>
             <div class="about-text">
-                <h3>Timeless Craftsmanship Meets Modern Design</h3>
-                <p>Every creation begins with raw earth and endless possibility. Our artisans pour years of experience and boundless creativity into each piece, ensuring that what you bring home is not just pottery, but a work of art.</p>
-                <p>We honor traditional techniques while embracing contemporary aesthetics, creating pieces that are both functional and beautiful. From the first touch of clay to the final glaze, we're committed to excellence at every stage.</p>
+                <h3>Rooted in tradition, shaped by hand, and made to be cherished.</h3>
+                <p>Tanzy’s Blue Pottery is the brainchild of Tanya Bhasin & Reema Bhasin, founded with the vision to
+revive this centuries-old craft. At TBP, every piece is meticulously handcrafted by skilled women
+artisans of Jaipur. Each creation passes through 22–25 stages and 44–46 intricate processes
+before it reaches completion — a true testament to precision.</p>
                 <div style="margin-top: 2rem;">
                     <a href="/about" class="cta-button" style="font-size: 0.85rem; padding: 0.9rem 2rem; animation: none; opacity: 1;">Learn More About Us →</a>
                 </div>
@@ -279,48 +283,48 @@ export default function HomePage() {
             <p class="section-description">Explore our curated selection of handcrafted pottery, each piece a testament to skill, patience, and artistic vision.</p>
         </div>
         <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1760764541302-e3955fbc6b2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwxfHxwb3R0ZXJ5JTIwY2VyYW1pY3MlMjBoYW5kbWFkZXxlbnwxfDB8fHwxNzczMzAxOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Marbled ceramic vases" loading="lazy" onerror="this.style.display='none'">
+            <a href="/gallery#atelier-collection" class="gallery-item" style="text-decoration:none;">
+                <img src="/images/gallery/pottery-1.jpg" alt="The Atelier Collection" loading="lazy" onerror="this.style.display='none'">
                 <div class="gallery-overlay">
-                    <h3 class="gallery-title">Marbled Vases</h3>
-                    <p class="gallery-description">Unique decorative pieces with organic patterns</p>
+                    <h3 class="gallery-title">The Atelier Collection</h3>
+                    <p class="gallery-description">Signature studio pieces crafted with artistic precision</p>
                 </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1629380321590-3b3f75d66dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwyfHxwb3R0ZXJ5JTIwY2VyYW1pY3MlMjBoYW5kbWFkZXxlbnwxfDB8fHwxNzczMzAxOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Blue ceramic vase" loading="lazy" onerror="this.style.display='none'">
+            </a>
+            <a href="/gallery#dining-edit" class="gallery-item" style="text-decoration:none;">
+                <img src="/images/gallery/pottery-2.jpg" alt="Dining Edit" loading="lazy" onerror="this.style.display='none'">
                 <div class="gallery-overlay">
-                    <h3 class="gallery-title">Artisan Vases</h3>
-                    <p class="gallery-description">Handcrafted with distinctive blue glazes</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1766499670904-edab815e8fe3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwxfHxwb3R0ZXJ5JTIwd29ya3Nob3AlMjBhcnRpc2FufGVufDF8fHx8MTc3MzMwMTk3OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Traditional pottery workshop" loading="lazy" onerror="this.style.display='none'">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Traditional Forms</h3>
-                    <p class="gallery-description">Classic shapes with timeless appeal</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1771830937946-2f0de3d5673b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwxfHxjZXJhbWljJTIwYm93bHMlMjBwbGF0ZXMlMjBoYW5kbWFkZXxlbnwxfHx8fDE3NzMzMDE5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Ceramic collection display" loading="lazy" onerror="this.style.display='none'">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Dining Collections</h3>
+                    <h3 class="gallery-title">Dining Edit</h3>
                     <p class="gallery-description">Elegant tableware for everyday luxury</p>
                 </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1772455443246-46e9a461e5ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwyfHxjZXJhbWljJTIwYm93bHMlMjBwbGF0ZXMlMjBoYW5kbWFkZXxlbnwxfHx8fDE3NzMzMDE5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Assorted ceramic bowls" loading="lazy" onerror="this.style.display='none'">
+            </a>
+            <a href="/gallery#home-decor" class="gallery-item" style="text-decoration:none;">
+                <img src="/images/gallery/pottery-3.jpg" alt="Home Decor" loading="lazy" onerror="this.style.display='none'">
                 <div class="gallery-overlay">
-                    <h3 class="gallery-title">Bowl Collection</h3>
-                    <p class="gallery-description">Functional art for your kitchen</p>
+                    <h3 class="gallery-title">Home Decor</h3>
+                    <p class="gallery-description">Handcrafted accents to elevate your living spaces</p>
                 </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1767476106330-4e5a0b4dcf94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwyfHxwb3R0ZXJ5JTIwd29ya3Nob3AlMjBhcnRpc2FufGVufDF8fHx8MTc3MzMwMTk3OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Potter shaping clay" loading="lazy" onerror="this.style.display='none'">
+            </a>
+            <a href="/gallery#festive-collection" class="gallery-item" style="text-decoration:none;">
+                <img src="/images/gallery/pottery-4.jpg" alt="Festive Collection" loading="lazy" onerror="this.style.display='none'">
                 <div class="gallery-overlay">
-                    <h3 class="gallery-title">Custom Creations</h3>
-                    <p class="gallery-description">Made to order with your vision in mind</p>
+                    <h3 class="gallery-title">Festive Collection</h3>
+                    <p class="gallery-description">Celebrate every occasion with artisanal pottery</p>
                 </div>
-            </div>
+            </a>
+            <a href="/gallery#utility-and-gifting" class="gallery-item" style="text-decoration:none;">
+                <img src="/images/gallery/pottery-5.jpg" alt="Utility and Gifting" loading="lazy" onerror="this.style.display='none'">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Utility & Gifting</h3>
+                    <p class="gallery-description">Functional art perfect for gifting and daily use</p>
+                </div>
+            </a>
+            <a href="/gallery#pichwai-collection" class="gallery-item" style="text-decoration:none;">
+                <img src="/images/gallery/pottery-6.jpg" alt="Pichwai Collection" loading="lazy" onerror="this.style.display='none'">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Pichwai Collection</h3>
+                    <p class="gallery-description">Traditional Pichwai art reimagined in blue pottery</p>
+                </div>
+            </a>
         </div>
         <div class="view-all-wrapper">
             <a href="/gallery" class="view-all-btn">View All Gallery →</a>
@@ -343,12 +347,12 @@ export default function HomePage() {
                     <p class="collection-desc">Handcrafted diyas, lanterns, and decorative pieces in deep blue and gold, perfect for illuminating your celebrations.</p>
                 </div>
             </a>
-            <a href="/collections/holi" class="collection-card" style="text-decoration:none;">
-                <img src="/images/holi-collection.png" alt="Holi pottery collection" loading="lazy">
+            <a href="/collections/pichwai" class="collection-card" style="text-decoration:none;">
+                <img src="/images/Pichwai-collection.png" alt="Pichwai pottery collection" loading="lazy">
                 <div class="collection-overlay">
                     <div class="collection-tag">Festival of Colors</div>
-                    <h3 class="collection-name">Holi Collection</h3>
-                    <p class="collection-desc">Vibrant, color-splashed ceramics that capture the joyous energy of Holi — bowls, plates, and serving ware bursting with life.</p>
+                    <h3 class="collection-name">Pichwai Collection</h3>
+                    <p class="collection-desc">Vibrant, color-splashed ceramics that capture the joyous energy of Pichwai — bowls, plates, and serving ware bursting with life.</p>
                 </div>
             </a>
             <a href="/collections/christmas" class="collection-card" style="text-decoration:none;">
@@ -356,40 +360,51 @@ export default function HomePage() {
                 <div class="collection-overlay">
                     <div class="collection-tag">Winter Warmth</div>
                     <h3 class="collection-name">Christmas Collection</h3>
-                    <p class="collection-desc">Cozy holiday mugs, ornament bowls, and festive plates in rich reds, greens, and cream — the perfect gifts for the season.</p>
+                    <p class="collection-desc">Cozy Pichwaiday mugs, ornament bowls, and festive plates in rich reds, greens, and cream — the perfect gifts for the season.</p>
                 </div>
             </a>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section id="process" class="process">
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
         <div class="section-header">
-            <div class="section-subtitle">Our Process</div>
-            <h2 class="section-title">From Clay to Creation</h2>
-            <p class="section-description">Every piece goes through a meticulous journey, guided by skilled hands and refined by fire.</p>
+            <div class="section-subtitle">Our Pride</div>
+            <h2 class="section-title">Achievements & Milestones</h2>
+            <p class="section-description">A glimpse into the recognition and milestones that mark our journey of craftsmanship and creativity.</p>
         </div>
-        <div class="process-steps">
-            <div class="process-step">
-                <div class="process-number">01</div>
-                <h3>Shaping</h3>
-                <p>We begin with raw clay, shaping it with precision on the potter's wheel or by hand, allowing the material to guide our creative vision.</p>
+        <div class="achievements-preview-grid">
+            <div class="gallery-item achievement-card">
+                <img src="/images/achievements/achievement0.png" alt="A token of appreciation at PAC by PDKF" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">PAC Recognition</h3>
+                    <p class="gallery-description">A token of appreciation at the Princess Artisan Collective (PAC) by the Princess Diya Kumari Foundation</p>
+                </div>
             </div>
-            <div class="process-step">
-                <div class="process-number">02</div>
-                <h3>Drying</h3>
-                <p>The piece is carefully dried to prevent cracking, a patient process that can't be rushed, ensuring structural integrity.</p>
+            <div class="gallery-item achievement-card">
+                <img src="/images/achievements/achievement1.png" alt="With Honourable CM of Rajasthan" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Honourable CM of Rajasthan</h3>
+                    <p class="gallery-description">Presenting our most revered piece to Shri Bhajan Lal Sharma</p>
+                </div>
             </div>
-            <div class="process-step">
-                <div class="process-number">03</div>
-                <h3>Glazing</h3>
-                <p>We apply unique glazes that will transform in the kiln, creating stunning colors and textures that make each piece distinctive.</p>
+            <div class="gallery-item achievement-card">
+                <img src="/images/achievements/achievement2.png" alt="With Col. Raghvendra Rathore" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Col. Raghvendra Rathore</h3>
+                    <p class="gallery-description">In conversation with Col. Raghvendra Rathore</p>
+                </div>
             </div>
-            <div class="process-step">
-                <div class="process-number">04</div>
-                <h3>Firing</h3>
-                <p>The final transformation happens in the kiln at high temperatures, where earth becomes art, and clay becomes timeless beauty.</p>
+            <div class="gallery-item achievement-card">
+                <img src="/images/achievements/achievement4.png" alt="Felicitated at IIDC" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">IIDC Felicitation</h3>
+                    <p class="gallery-description">Felicitated at the India Institute Design Conclave (IIDC)</p>
+                </div>
             </div>
+        </div>
+        <div class="view-all-wrapper">
+            <a href="/achievements" class="view-all-btn">View All Achievements →</a>
         </div>
     </section>
 
@@ -530,7 +545,7 @@ export default function HomePage() {
                     <li><a href="/about">About</a></li>
                     <li><a href="/gallery">Gallery</a></li>
                     <li><a href="/hands-on">Hands On</a></li>
-                    <li><a href="#process">Process</a></li>
+                    <li><a href="/achievements">Achievements</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -538,7 +553,7 @@ export default function HomePage() {
                 <h4>Collections</h4>
                 <ul>
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
-                    <li><a href="/collections/holi">Holi Collection</a></li>
+                    <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
                 </ul>
             </div>
@@ -546,7 +561,7 @@ export default function HomePage() {
                 <h4>Information</h4>
                 <ul>
                     <li><a href="#">Care Instructions</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="/faq">FAQs</a></li>
                 </ul>
             </div>
         </div>

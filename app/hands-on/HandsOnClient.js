@@ -73,11 +73,12 @@ export default function HandsOnClient({ images }) {
                 <a href="/#collections">Collections <span class="dropdown-arrow"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
-                    <li><a href="/collections/holi">Holi Collection</a></li>
+                    <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
+            <li><a href="/achievements">Achievements</a></li>
             <li><a href="/#contact">Contact</a></li>
         </ul>
         <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
@@ -96,11 +97,12 @@ export default function HandsOnClient({ images }) {
                 <button class="mobile-dropdown-toggle">Collections <span class="mobile-dropdown-arrow">▾</span></button>
                 <ul class="mobile-dropdown-list">
                     <li><a href="/collections/diwali">Diwali</a></li>
-                    <li><a href="/collections/holi">Holi</a></li>
+                    <li><a href="/collections/pichwai">Pichwai</a></li>
                     <li><a href="/collections/christmas">Christmas</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
+            <li><a href="/achievements">Achievements</a></li>
             <li><a href="/#contact">Contact</a></li>
         </ul>
     </div>
@@ -143,7 +145,7 @@ export default function HandsOnClient({ images }) {
                 <h4>Collections</h4>
                 <ul>
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
-                    <li><a href="/collections/holi">Holi Collection</a></li>
+                    <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
                 </ul>
             </div>
@@ -151,7 +153,7 @@ export default function HandsOnClient({ images }) {
                 <h4>Information</h4>
                 <ul>
                     <li><a href="#">Care Instructions</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="/faq">FAQs</a></li>
                 </ul>
             </div>
         </div>

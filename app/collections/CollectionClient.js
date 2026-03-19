@@ -12,11 +12,11 @@ const COLLECTION_META = {
             'background: linear-gradient(135deg, #0f1a2e 0%, #1a2744 100%);',
         tagColor: '#c4976b'
     },
-    holi: {
-        tag: 'Festival of Colors',
-        title: 'Holi Collection',
+    pichwai: {
+        tag: 'Festival of Lord Krishna',
+        title: 'Pichwai Collection',
         description:
-            'Celebrate the vibrant festival of colors with our joyful, color-splashed ceramics — each piece a handcrafted explosion of happiness.',
+            'Pichwai paintings are intricate, traditional, 400-year-old textile art from Rajasthan, usually depicting Lord Krishna (as Shrinathji) hung behind temple idols to set the mood for worship',
         heroStyle:
             'background: linear-gradient(135deg, #e85da1 0%, #f7a03c 50%, #7bd94e 100%);',
         tagColor: '#fff'
@@ -25,7 +25,7 @@ const COLLECTION_META = {
         tag: 'Winter Warmth',
         title: 'Christmas Collection',
         description:
-            'Bring holiday cheer to your table with our handcrafted Christmas ceramics — cozy mugs, festive plates, and ornamental bowls in rich seasonal hues.',
+            'Bring Pichwaiday cheer to your table with our handcrafted Christmas ceramics — cozy mugs, festive plates, and ornamental bowls in rich seasonal hues.',
         heroStyle:
             'background: linear-gradient(135deg, #1a3c2a 0%, #8b2020 100%);',
         tagColor: '#c4976b'
@@ -109,11 +109,12 @@ export default function CollectionClient({ collectionKey, images }) {
                 <a href="/#collections">Collections <span class="dropdown-arrow"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
-                    <li><a href="/collections/holi">Holi Collection</a></li>
+                    <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
+            <li><a href="/achievements">Achievements</a></li>
             <li><a href="/#contact">Contact</a></li>
         </ul>
         <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
@@ -132,11 +133,12 @@ export default function CollectionClient({ collectionKey, images }) {
                 <button class="mobile-dropdown-toggle">Collections <span class="mobile-dropdown-arrow">▾</span></button>
                 <ul class="mobile-dropdown-list">
                     <li><a href="/collections/diwali">Diwali</a></li>
-                    <li><a href="/collections/holi">Holi</a></li>
+                    <li><a href="/collections/pichwai">Pichwai</a></li>
                     <li><a href="/collections/christmas">Christmas</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
+            <li><a href="/achievements">Achievements</a></li>
             <li><a href="/#contact">Contact</a></li>
         </ul>
     </div>
@@ -182,7 +184,7 @@ export default function CollectionClient({ collectionKey, images }) {
                 <h4>Collections</h4>
                 <ul>
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
-                    <li><a href="/collections/holi">Holi Collection</a></li>
+                    <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
                 </ul>
             </div>
@@ -190,7 +192,7 @@ export default function CollectionClient({ collectionKey, images }) {
                 <h4>Information</h4>
                 <ul>
                     <li><a href="#">Care Instructions</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="/faq">FAQs</a></li>
                 </ul>
             </div>
         </div>

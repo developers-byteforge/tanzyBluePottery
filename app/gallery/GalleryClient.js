@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-export default function GalleryClient({ images }) {
+export default function GalleryClient({ categories }) {
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -13,7 +13,7 @@ export default function GalleryClient({ images }) {
             { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
         );
 
-        const items = document.querySelectorAll('.gallery-item, .fade-in');
+        const items = document.querySelectorAll('.gallery-item, .gallery-category-header, .fade-in');
         items.forEach((el) => observer.observe(el));
 
         // Hamburger menu
@@ -39,6 +39,16 @@ export default function GalleryClient({ images }) {
         const mobileDropdownHandler = () => { if (mobileDropdown) mobileDropdown.classList.toggle('open'); };
         if (mobileDropdownToggle) mobileDropdownToggle.addEventListener('click', mobileDropdownHandler);
 
+        // Scroll to hash on load
+        if (window.location.hash) {
+            setTimeout(() => {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 300);
+        }
+
         return () => {
             items.forEach((el) => observer.unobserve(el));
             observer.disconnect();
@@ -49,16 +59,53 @@ export default function GalleryClient({ images }) {
         };
     }, []);
 
-    const galleryHTML = images
-        .map(
-            (src, i) => `
-      <div class="gallery-item" style="transition-delay: ${i * 0.08}s;">
-        <img src="${src}" alt="Pottery piece ${i + 1}" loading="lazy">
-        <div class="gallery-overlay">
-        </div>
-      </div>`
-        )
+    const categoriesHTML = categories
+        .map((cat) => {
+            if (cat.images.length === 0) return '';
+
+            const imagesHTML = cat.images
+                .map(
+                    (src, i) => `
+          <div class="gallery-item" style="transition-delay: ${i * 0.08}s;">
+            <img src="${src}" alt="${cat.title} piece ${i + 1}" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">${cat.title}</h3>
+            </div>
+          </div>`
+                )
+                .join('');
+
+            return `
+        <section id="${cat.key}" class="gallery-category">
+            <div class="gallery-category-header">
+                <h2>${cat.title}</h2>
+                <p>${cat.description}</p>
+            </div>
+            <div class="gallery-category-grid">
+                ${imagesHTML}
+            </div>
+        </section>`;
+        })
         .join('');
+
+    const hasAnyImages = categories.some((cat) => cat.images.length > 0);
+
+    const emptyState = !hasAnyImages
+        ? `<div class="gallery-empty">
+            <p>Gallery images coming soon! Add images to the category folders inside <code>public/images/gallery/</code> and they will appear here automatically.</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">Folders: marbled-vases, artisan-vases, traditional-forms, dining-collections, bowl-collection, custom-creations</p>
+           </div>`
+        : '';
+
+    // Quick-nav links for categories that have images
+    const quickNavHTML = categories
+        .filter((cat) => cat.images.length > 0)
+        .map((cat) => `<a href="#${cat.key}" class="gallery-quick-link">${cat.title}</a>`)
+        .join('');
+
+    const quickNav = quickNavHTML
+        ? `<div class="gallery-quick-nav">${quickNavHTML}</div>`
+        : '';
 
     return (
         <div
@@ -75,11 +122,12 @@ export default function GalleryClient({ images }) {
                 <a href="/#collections">Collections <span class="dropdown-arrow"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
-                    <li><a href="/collections/holi">Holi Collection</a></li>
+                    <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
+            <li><a href="/achievements">Achievements</a></li>
             <li><a href="/#contact">Contact</a></li>
         </ul>
         <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
@@ -98,11 +146,12 @@ export default function GalleryClient({ images }) {
                 <button class="mobile-dropdown-toggle">Collections <span class="mobile-dropdown-arrow">▾</span></button>
                 <ul class="mobile-dropdown-list">
                     <li><a href="/collections/diwali">Diwali</a></li>
-                    <li><a href="/collections/holi">Holi</a></li>
+                    <li><a href="/collections/pichwai">Pichwai</a></li>
                     <li><a href="/collections/christmas">Christmas</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
+            <li><a href="/achievements">Achievements</a></li>
             <li><a href="/#contact">Contact</a></li>
         </ul>
     </div>
@@ -110,13 +159,14 @@ export default function GalleryClient({ images }) {
     <!-- Page Hero -->
     <section class="sub-page-hero">
         <h1>Our Full Gallery</h1>
-        <p>Browse our complete collection of handcrafted pottery — from signature vases to seasonal specials.</p>
+        <p>Browse our complete collection of handcrafted pottery, organized by category.</p>
     </section>
 
-    <!-- Dynamic Gallery Grid -->
-    <div class="full-gallery-grid">
-        ${galleryHTML}
-    </div>
+    ${quickNav}
+
+    <!-- Category Sections -->
+    ${categoriesHTML}
+    ${emptyState}
 
     <!-- Footer -->
     <footer>
@@ -128,7 +178,7 @@ export default function GalleryClient({ images }) {
                     <a href="#" class="social-link">f</a>
                     <a href="#" class="social-link">𝕏</a>
                     <a href="#" class="social-link">in</a>
-                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link"><img src="/images/instagram.svg" alt="Instagram" style="width:1em;height:1em;vertical-align:middle;"></a>
                 </div>
             </div>
             <div class="footer-section">
@@ -138,6 +188,7 @@ export default function GalleryClient({ images }) {
                     <li><a href="/about">About</a></li>
                     <li><a href="/gallery">Gallery</a></li>
                     <li><a href="/hands-on">Hands On</a></li>
+                    <li><a href="/achievements">Achievements</a></li>
                     <li><a href="/#contact">Contact</a></li>
                 </ul>
             </div>
@@ -145,7 +196,7 @@ export default function GalleryClient({ images }) {
                 <h4>Collections</h4>
                 <ul>
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
-                    <li><a href="/collections/holi">Holi Collection</a></li>
+                    <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
                 </ul>
             </div>
@@ -153,7 +204,7 @@ export default function GalleryClient({ images }) {
                 <h4>Information</h4>
                 <ul>
                     <li><a href="#">Care Instructions</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="/faq">FAQs</a></li>
                 </ul>
             </div>
         </div>

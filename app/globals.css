@@ -758,26 +758,26 @@
             transform: translateY(0);
         }
 
-        /* Process Section */
-        .process {
+        /* Achievements Section */
+        .achievements {
             background: linear-gradient(135deg, var(--clay-dark) 0%, var(--charcoal) 100%);
             color: var(--cream);
         }
 
-        .process .section-subtitle {
+        .achievements .section-subtitle {
             color: var(--terracotta);
         }
 
-        .process .section-title {
+        .achievements .section-title {
             color: var(--warm-white);
         }
 
-        .process .section-description {
+        .achievements .section-description {
             color: var(--cream);
             opacity: 0.9;
         }
 
-        .process-steps {
+        .achievements-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 3rem;
@@ -785,46 +785,38 @@
             margin: 0 auto;
         }
 
-        .process-step {
+        .achievement-card {
             text-align: center;
-            padding: 2rem;
+            padding: 3rem 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
             opacity: 0;
             transform: translateY(30px);
             transition: all 0.6s ease-out;
         }
 
-        .process-step.visible {
+        .achievement-card.visible {
             opacity: 1;
             transform: translateY(0);
         }
 
-        .process-step:nth-child(1) {
-            transition-delay: 0s;
+        .achievement-card:nth-child(1) { transition-delay: 0s; }
+        .achievement-card:nth-child(2) { transition-delay: 0.15s; }
+        .achievement-card:nth-child(3) { transition-delay: 0.3s; }
+        .achievement-card:nth-child(4) { transition-delay: 0.45s; }
+
+        .achievement-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
         }
 
-        .process-step:nth-child(2) {
-            transition-delay: 0.15s;
-        }
-
-        .process-step:nth-child(3) {
-            transition-delay: 0.3s;
-        }
-
-        .process-step:nth-child(4) {
-            transition-delay: 0.45s;
-        }
-
-        .process-number {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 5rem;
-            font-weight: 300;
-            color: var(--terracotta);
-            line-height: 1;
+        .achievement-icon {
+            font-size: 3rem;
             margin-bottom: 1.5rem;
-            opacity: 0.3;
         }
 
-        .process-step h3 {
+        .achievement-card h3 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.8rem;
             font-weight: 600;
@@ -832,10 +824,119 @@
             margin-bottom: 1rem;
         }
 
-        .process-step p {
+        .achievement-card p {
             color: var(--cream);
             opacity: 0.85;
             line-height: 1.8;
+        }
+
+        .achievements-preview-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .achievements-preview-grid .gallery-item {
+            aspect-ratio: 3/4;
+        }
+
+        .achievements-preview-grid .achievement-card {
+            padding: 0;
+            background: none;
+            border: none;
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        .achievements-preview-grid .achievement-card:hover {
+            background: none;
+        }
+
+        .achievements-preview-grid .gallery-overlay {
+            background: linear-gradient(to top, rgba(15, 26, 46, 0.9) 0%, rgba(15, 26, 46, 0.4) 50%, transparent 100%);
+        }
+
+        .achievements .view-all-wrapper {
+            margin-top: 3.5rem;
+        }
+
+        .achievements .view-all-btn {
+            border-color: var(--cream);
+            color: var(--cream);
+        }
+
+        .achievements .view-all-btn:hover {
+            background: var(--cream);
+            color: var(--charcoal);
+        }
+
+        /* Achievements Page Gallery */
+        .achievement-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+
+        .achievement-gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(61, 47, 42, 0.1);
+            opacity: 0;
+            transform: translateY(30px) scale(0.97);
+            transition: all 0.6s ease-out;
+            background: var(--cream);
+        }
+
+        .achievement-gallery-item.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .achievement-gallery-item img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .achievement-gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .achievement-caption {
+            padding: 1.2rem 1.5rem;
+            background: var(--cream);
+        }
+
+        .achievement-caption p {
+            font-size: 0.95rem;
+            color: var(--clay-dark);
+            line-height: 1.6;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .achievements-empty,
+        .gallery-empty {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--clay-medium);
+            font-size: 1.1rem;
+            grid-column: 1 / -1;
+        }
+
+        .achievements-empty code,
+        .gallery-empty code {
+            background: var(--cream);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
         }
 
         /* Testimonials Section */
@@ -1810,6 +1911,82 @@
             padding: 4rem 5%;
         }
 
+        /* Gallery Category Sections */
+        .gallery-quick-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .gallery-quick-link {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            border: 1.5px solid var(--clay-dark);
+            border-radius: 50px;
+            color: var(--clay-dark);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-quick-link:hover {
+            background: var(--clay-dark);
+            color: var(--warm-white);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(61, 47, 42, 0.15);
+        }
+
+        .gallery-category {
+            padding: 4rem 5% 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .gallery-category:first-of-type {
+            padding-top: 2rem;
+        }
+
+        .gallery-category-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--cream);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .gallery-category-header.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .gallery-category-header h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-category-header p {
+            font-size: 1.05rem;
+            color: var(--clay-medium);
+            line-height: 1.6;
+        }
+
+        .gallery-category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 1232px) {
             .nav-links {
@@ -1822,6 +1999,11 @@
         }
 
         @media (max-width: 1024px) {
+
+            .achievements-preview-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
 
             .about-content,
             .contact-content,
@@ -1924,9 +2106,108 @@
             }
 
             .handson-gallery-grid,
-            .full-gallery-grid {
+            .full-gallery-grid,
+            .achievement-gallery-grid,
+            .gallery-category-grid {
                 grid-template-columns: 1fr;
             }
+
+            .gallery-quick-nav {
+                gap: 0.5rem;
+            }
+
+            .gallery-quick-link {
+                font-size: 0.75rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .achievements-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .achievements-preview-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* FAQ Page */
+        .faq-section {
+            padding: 4rem 5%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .faq-item {
+            background: var(--cream);
+            border-radius: 15px;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .faq-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background: none;
+            border: none;
+            font-family: 'Jost', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            text-align: left;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: var(--terracotta);
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--terracotta);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer p {
+            padding: 0 2rem 1.5rem;
+            font-size: 1.05rem;
+            color: var(--clay-medium);
+            line-height: 1.8;
         }
 
         /* Scroll Animations */
