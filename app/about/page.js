@@ -105,7 +105,7 @@ export default function AboutPage() {
     <!-- Page Hero -->
     <section class="sub-page-hero">
         <h1>About Us</h1>
-        <p>Meet the passionate people behind Tanzy's Blue Pottery — a journey fueled by love for clay, art, and tradition.</p>
+        <p>Meet the passionate people behind Tanzy's Blue Pottery — a journey fueled by love for pottery, art, and tradition.</p>
     </section>
 
     <!-- Founders Section -->

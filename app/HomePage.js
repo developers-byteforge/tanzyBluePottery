@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-{/* <img src="https://images.unsplash.com/photo-1767476106330-4e5a0b4dcf94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwyfHxwb3R0ZXJ5JTIwd29ya3Nob3AlMjBhcnRpc2FufGVufDF8fHx8MTc3MzMwMTk3OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Artisan hands shaping clay" loading="lazy" onerror="this.style.display='none'"></img> */}
+{/* <img src="https://images.unsplash.com/photo-1767476106330-4e5a0b4dcf94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTY4NzZ8MHwxfHNlYXJjaHwyfHxwb3R0ZXJ5JTIwd29ya3Nob3AlMjBhcnRpc2FufGVufDF8fHx8MTc3MzMwMTk3OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Artisan hands shaping pottery" loading="lazy" onerror="this.style.display='none'"></img> */}
 export default function HomePage() {
     useEffect(() => {
         const observerOptions = {
@@ -224,12 +224,12 @@ export default function HomePage() {
         <div class="section-header">
             <div class="section-subtitle">Our Story</div>
             <h2 class="section-title">Crafting Beauty from Earth</h2>
-            <p class="section-description">At Tanzy's Blue Pottery, we believe in the transformative power of clay. Each piece is a unique expression of artistry and tradition.</p>
+            <p class="section-description">At Tanzy's Blue Pottery, we believe in the transformative power of pottery. Each piece is a unique expression of artistry and tradition.</p>
         </div>
         <div class="about-content">
             <div class="about-image">
                 <div class="about-image-wrapper">
-                    <img src="/images/aboutImage.JPG" alt="Artisan hands shaping clay" loading="lazy" onerror="this.style.display='none'">
+                    <img src="/images/aboutImage.JPG" alt="Artisan hands shaping pottery" loading="lazy" onerror="this.style.display='none'">
                 </div>
             </div>
             <div class="about-text">
@@ -260,7 +260,7 @@ before it reaches completion — a true testament to precision.</p>
                         <div class="feature-icon">⚘</div>
                         <div class="feature-text">
                             <h4>Natural Materials</h4>
-                            <p>We use sustainable, earth-friendly clays and glazes</p>
+                            <p>We use sustainable, earth-friendly potterys and glazes</p>
                         </div>
                     </div>
                     <div class="feature-item">
@@ -413,7 +413,7 @@ before it reaches completion — a true testament to precision.</p>
         <div class="section-header">
             <div class="section-subtitle">Get Your Hands Dirty</div>
             <h2 class="section-title">Hands-On Experience</h2>
-            <p class="section-description">Step into our studio and discover the joy of creating with clay. Our workshops welcome beginners and experienced potters alike.</p>
+            <p class="section-description">Step into our studio and discover the joy of creating with pottery. Our workshops welcome beginners and experienced potters alike.</p>
         </div>
         <div class="hands-on-content">
             <div class="hands-on-image">
@@ -421,7 +421,7 @@ before it reaches completion — a true testament to precision.</p>
             </div>
             <div class="hands-on-text">
                 <h3>Create Your Own Masterpiece</h3>
-                <p>There's something magical about shaping clay with your own hands. Our guided pottery sessions let you experience the ancient art of ceramics in a welcoming, creative environment.</p>
+                <p>There's something magical about shaping pottery with your own hands. Our guided pottery sessions let you experience the ancient art of ceramics in a welcoming, creative environment.</p>
                 <p>Whether you're looking for a unique date idea, a team-building activity, or simply a creative escape — we've got you covered. No experience needed!</p>
                 <a href="/hands-on" class="hands-on-cta">View Workshop Gallery →</a>
             </div>
@@ -615,7 +615,7 @@ before it reaches completion — a true testament to precision.</p>
         <div class="footer-content">
             <div class="footer-brand">
                 <h3>Tanzy's Blue Pottery</h3>
-                <p>Crafting beautiful, functional pottery that brings artistry into everyday life. Each piece is a unique expression of our passion for clay.</p>
+                <p>Crafting beautiful, functional pottery that brings artistry into everyday life. Each piece is a unique expression of our passion for pottery.</p>
                 <div class="social-links">
                     <a href="https://www.instagram.com/tanzy.bloo/" class="social-link" target="_blank" rel="noopener noreferrer"><img src="/images/instagram.svg" alt="Instagram" style="width:1em;height:1em;vertical-align:middle;"></a>
                 </div>

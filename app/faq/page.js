@@ -5,11 +5,11 @@ import { useEffect } from 'react';
 const FAQ_DATA = [
     {
         question: 'What is Blue Pottery made of?',
-        answer: 'Unlike regular ceramics, Blue Pottery is non-clay based. It is made using a unique blend of quartz stone powder, glass, multani mitti, and natural gums — giving it that distinctive smooth finish.',
+        answer: 'Unlike regular ceramics, Blue Pottery is non-pottery based. It is made using a unique blend of quartz stone powder, glass, multani mitti, and natural gums — giving it that distinctive smooth finish.',
     },
     {
         question: 'Is Blue Pottery fragile?',
-        answer: 'Yes, it is relatively delicate. Since it isn\'t made from clay — so, gentle handling is key.',
+        answer: 'Yes, it is relatively delicate. Since it isn\'t made from pottery — so, gentle handling is key.',
     },
     {
         question: 'Can it be used for food?',
