@@ -1,9 +1,12 @@
 'use client';
 
 import { useEffect } from 'react';
+import { setupLightbox } from '../components/lightbox';
 
 export default function GalleryClient({ categories }) {
     useEffect(() => {
+        const cleanupLightbox = setupLightbox('.gallery-category-grid');
+
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -50,6 +53,7 @@ export default function GalleryClient({ categories }) {
         }
 
         return () => {
+            cleanupLightbox();
             items.forEach((el) => observer.unobserve(el));
             observer.disconnect();
             if (hamburgerBtn) hamburgerBtn.removeEventListener('click', hamburgerToggle);
@@ -175,10 +179,7 @@ export default function GalleryClient({ categories }) {
                 <h3>Tanzy's Blue Pottery</h3>
                 <p>Crafting beautiful, functional pottery that brings artistry into everyday life.</p>
                 <div class="social-links">
-                    <a href="#" class="social-link">f</a>
-                    <a href="#" class="social-link">𝕏</a>
-                    <a href="#" class="social-link">in</a>
-                    <a href="#" class="social-link"><img src="/images/instagram.svg" alt="Instagram" style="width:1em;height:1em;vertical-align:middle;"></a>
+                    <a href="https://www.instagram.com/tanzy.bloo/" class="social-link" target="_blank" rel="noopener noreferrer"><img src="/images/instagram.svg" alt="Instagram" style="width:1em;height:1em;vertical-align:middle;"></a>
                 </div>
             </div>
             <div class="footer-section">
@@ -203,7 +204,7 @@ export default function GalleryClient({ categories }) {
             <div class="footer-section">
                 <h4>Information</h4>
                 <ul>
-                    <li><a href="#">Care Instructions</a></li>
+                    
                     <li><a href="/faq">FAQs</a></li>
                 </ul>
             </div>
