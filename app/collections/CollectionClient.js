@@ -8,7 +8,7 @@ const COLLECTION_META = {
         tag: 'Festival of Lights',
         title: 'Diwali Collection',
         description:
-            'Celebrate the festival of lights with our handcrafted blue pottery diyas, lanterns, and decorative pieces — each piece adorned with intricate gold detailing.',
+            'Celebrate the festival of lights with our handcrafted blue pottery diyas, lanterns, and decorative pieces — each piece adorned with intricate detailing.',
         heroStyle:
             'background: linear-gradient(135deg, #0f1a2e 0%, #1a2744 100%);',
         tagColor: '#c4976b'
@@ -26,7 +26,7 @@ const COLLECTION_META = {
         tag: 'Winter Warmth',
         title: 'Christmas Collection',
         description:
-            'Bring Pichwaiday cheer to your table with our handcrafted Christmas ceramics — cozy mugs, festive plates, and ornamental bowls in rich seasonal hues.',
+            'Bring Pichwaiday cheer to your table with our handcrafted Christmas pottery — cozy mugs, festive plates, and ornamental bowls in rich seasonal hues.',
         heroStyle:
             'background: linear-gradient(135deg, #1a3c2a 0%, #8b2020 100%);',
         tagColor: '#c4976b'
@@ -104,8 +104,7 @@ export default function CollectionClient({ collectionKey, images }) {
                 __html: `
     <!-- Navigation -->
     <nav class="sub-page-nav">
-        <a href="/" class="logo" style="text-decoration:none;">Tanzy's Blue Pottery</a>
-        <ul class="nav-links">
+       <a href="/" class="logo" style="text-decoration:none;"><img src="/logo.jpeg" alt="Tanzy's Blue Pottery"></a>        <ul class="nav-links">
             <li><a href="/">Home</a></li>
             <li><a href="/#about">About</a></li>
             <li><a href="/gallery">Gallery</a></li>

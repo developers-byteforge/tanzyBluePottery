@@ -144,8 +144,7 @@ export default function HomePage() {
                 __html: `
     <!-- Navigation -->
     <nav>
-        <a href="/" class="logo" style="text-decoration:none;">Tanzy's Blue Pottery</a>
-        <ul class="nav-links">
+       <a href="/" class="logo" style="text-decoration:none;"><img src="/logo.jpeg" alt="Tanzy's Blue Pottery"></a>        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/gallery">Gallery</a></li>
@@ -344,7 +343,7 @@ before it reaches completion — a true testament to precision.</p>
                 <div class="collection-overlay">
                     <div class="collection-tag">Festival of Lights</div>
                     <h3 class="collection-name">Diwali Collection</h3>
-                    <p class="collection-desc">Handcrafted diyas, lanterns, and decorative pieces in deep blue and gold, perfect for illuminating your celebrations.</p>
+                    <p class="collection-desc">Handcrafted diyas, lanterns, and decorative pieces in deep blue, perfect for illuminating your celebrations.</p>
                 </div>
             </a>
             <a href="/collections/pichwai" class="collection-card" style="text-decoration:none;">
@@ -352,7 +351,7 @@ before it reaches completion — a true testament to precision.</p>
                 <div class="collection-overlay">
                     <div class="collection-tag">Festival of Colors</div>
                     <h3 class="collection-name">Pichwai Collection</h3>
-                    <p class="collection-desc">Vibrant, color-splashed ceramics that capture the joyous energy of Pichwai — bowls, plates, and serving ware bursting with life.</p>
+                    <p class="collection-desc">Vibrant, color-splashed pottery that capture the joyous energy of Pichwai — bowls, plates, and serving ware bursting with life.</p>
                 </div>
             </a>
             <a href="/collections/christmas" class="collection-card" style="text-decoration:none;">
@@ -421,7 +420,7 @@ before it reaches completion — a true testament to precision.</p>
             </div>
             <div class="hands-on-text">
                 <h3>Create Your Own Masterpiece</h3>
-                <p>There's something magical about shaping pottery with your own hands. Our guided pottery sessions let you experience the ancient art of ceramics in a welcoming, creative environment.</p>
+                <p>There's something magical about shaping pottery with your own hands. Our guided pottery sessions let you experience the ancient art of pottery in a welcoming, creative environment.</p>
                 <p>Whether you're looking for a unique date idea, a team-building activity, or simply a creative escape — we've got you covered. No experience needed!</p>
                 <a href="/hands-on" class="hands-on-cta">View Workshop Gallery →</a>
             </div>

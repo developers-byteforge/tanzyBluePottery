@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 const FAQ_DATA = [
     {
         question: 'What is Blue Pottery made of?',
-        answer: 'Unlike regular ceramics, Blue Pottery is non-pottery based. It is made using a unique blend of quartz stone powder, glass, multani mitti, and natural gums — giving it that distinctive smooth finish.',
+        answer: 'Unlike regular pottery, Blue Pottery is non-pottery based. It is made using a unique blend of quartz stone powder, glass, multani mitti, and natural gums — giving it that distinctive smooth finish.',
     },
     {
         question: 'Is Blue Pottery fragile?',
@@ -116,8 +116,7 @@ export default function FAQPage() {
                 __html: `
     <!-- Navigation -->
     <nav class="sub-page-nav">
-        <a href="/" class="logo" style="text-decoration:none;">Tanzy's Blue Pottery</a>
-        <ul class="nav-links">
+       <a href="/" class="logo" style="text-decoration:none;"><img src="/logo.jpeg" alt="Tanzy's Blue Pottery"></a>        <ul class="nav-links">
             <li><a href="/">Home</a></li>
             <li><a href="/#about">About</a></li>
             <li><a href="/gallery">Gallery</a></li>

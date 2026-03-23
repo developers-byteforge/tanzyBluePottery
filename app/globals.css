@@ -69,6 +69,14 @@
             letter-spacing: 2px;
             position: relative;
             animation: fadeIn 1s ease-out 0.3s both;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 92px;
+            width: auto;
+            display: block;
         }
 
         .logo::after {
@@ -2067,6 +2075,10 @@
 
             .logo {
                 font-size: 1.5rem;
+            }
+
+            .logo img {
+                height: 40px;
             }
 
             .hero-title {

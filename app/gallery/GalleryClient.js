@@ -117,8 +117,7 @@ export default function GalleryClient({ categories }) {
                 __html: `
     <!-- Navigation -->
     <nav class="sub-page-nav">
-        <a href="/" class="logo" style="text-decoration:none;">Tanzy's Blue Pottery</a>
-        <ul class="nav-links">
+       <a href="/" class="logo" style="text-decoration:none;"><img src="/logo.jpeg" alt="Tanzy's Blue Pottery"></a>        <ul class="nav-links">
             <li><a href="/">Home</a></li>
             <li><a href="/#about">About</a></li>
             <li><a href="/gallery">Gallery</a></li>
