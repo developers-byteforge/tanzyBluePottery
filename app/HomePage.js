@@ -154,6 +154,8 @@ export default function HomePage() {
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
                     <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
+                    <li><a href="/collections/pottery-rakhi">Pottery Rakhi</a></li>
+                    <li><a href="/collections/gifting">Gifting</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
@@ -178,6 +180,8 @@ export default function HomePage() {
                     <li><a href="/collections/diwali">Diwali</a></li>
                     <li><a href="/collections/pichwai">Pichwai</a></li>
                     <li><a href="/collections/christmas">Christmas</a></li>
+                    <li><a href="/collections/pottery-rakhi">Pottery Rakhi</a></li>
+                    <li><a href="/collections/gifting">Gifting</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
@@ -333,9 +337,9 @@ before it reaches completion — a true testament to precision.</p>
     <!-- Collections Section -->
     <section id="collections" class="collections">
         <div class="section-header">
-            <div class="section-subtitle">Seasonal Specials</div>
-            <h2 class="section-title">Our Festive Collections</h2>
-            <p class="section-description">Celebrate every occasion with our specially curated pottery collections, each inspired by the vibrant spirit of India's beloved festivals.</p>
+            <div class="section-subtitle">Curated For You</div>
+            <h2 class="section-title">Our Collections</h2>
+            <p class="section-description">Explore handcrafted pottery collections made for celebrations, thoughtful gifting, and everyday beauty.</p>
         </div>
         <div class="collections-grid">
             <a href="/collections/diwali" class="collection-card" style="text-decoration:none;">
@@ -347,7 +351,7 @@ before it reaches completion — a true testament to precision.</p>
                 </div>
             </a>
             <a href="/collections/pichwai" class="collection-card" style="text-decoration:none;">
-                <img src="/images/Pichwai-collection.png" alt="Pichwai pottery collection" loading="lazy">
+                <img src="/images/collections/Pichwai-collection/F2E39026-B72C-44D4-91B9-2D6102B618A4.png" alt="Pichwai pottery collection" loading="lazy">
                 <div class="collection-overlay">
                     <div class="collection-tag">Festival of Colors</div>
                     <h3 class="collection-name">Pichwai Collection</h3>
@@ -360,6 +364,22 @@ before it reaches completion — a true testament to precision.</p>
                     <div class="collection-tag">Winter Warmth</div>
                     <h3 class="collection-name">Christmas Collection</h3>
                     <p class="collection-desc">Cozy Pichwaiday mugs, ornament bowls, and festive plates in rich reds, greens, and cream — the perfect gifts for the season.</p>
+                </div>
+            </a>
+            <a href="/collections/pottery-rakhi" class="collection-card" style="text-decoration:none;">
+                <img src="/images/collections/pottery-rakhi/4BC82648-6FD9-4160-A43D-5A0DDE2BEF4A.png" alt="Pottery Rakhi collection" loading="lazy">
+                <div class="collection-overlay">
+                    <div class="collection-tag">Handcrafted Festive Gifts</div>
+                    <h3 class="collection-name">Pottery Rakhi</h3>
+                    <p class="collection-desc">Meaningful handcrafted rakhis and keepsakes made to celebrate the bond of love.</p>
+                </div>
+            </a>
+            <a href="/collections/gifting" class="collection-card" style="text-decoration:none;">
+                <img src="/images/collections/gifting/F13E0950-0829-47E0-8766-893FD91C7AA3.png" alt="Gifting collection" loading="lazy">
+                <div class="collection-overlay">
+                    <div class="collection-tag">Thoughtful Gifting</div>
+                    <h3 class="collection-name">Gifting</h3>
+                    <p class="collection-desc">Distinctive handcrafted pottery gifts for celebrations, milestones, and everyday moments.</p>
                 </div>
             </a>
         </div>

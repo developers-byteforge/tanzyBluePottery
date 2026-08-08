@@ -81,6 +81,8 @@ export default function AchievementsClient({ achievements }) {
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
                     <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
+                    <li><a href="/collections/pottery-rakhi">Pottery Rakhi</a></li>
+                    <li><a href="/collections/gifting">Gifting</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
@@ -105,6 +107,8 @@ export default function AchievementsClient({ achievements }) {
                     <li><a href="/collections/diwali">Diwali</a></li>
                     <li><a href="/collections/pichwai">Pichwai</a></li>
                     <li><a href="/collections/christmas">Christmas</a></li>
+                    <li><a href="/collections/pottery-rakhi">Pottery Rakhi</a></li>
+                    <li><a href="/collections/gifting">Gifting</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
@@ -152,6 +156,8 @@ export default function AchievementsClient({ achievements }) {
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
                     <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
+                    <li><a href="/collections/pottery-rakhi">Pottery Rakhi</a></li>
+                    <li><a href="/collections/gifting">Gifting</a></li>
                 </ul>
             </div>
             <div class="footer-section">

@@ -69,6 +69,8 @@ export default function AboutPage() {
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
                     <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
+                    <li><a href="/collections/pottery-rakhi">Pottery Rakhi</a></li>
+                    <li><a href="/collections/gifting">Gifting</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
@@ -93,6 +95,8 @@ export default function AboutPage() {
                     <li><a href="/collections/diwali">Diwali</a></li>
                     <li><a href="/collections/pichwai">Pichwai</a></li>
                     <li><a href="/collections/christmas">Christmas</a></li>
+                    <li><a href="/collections/pottery-rakhi">Pottery Rakhi</a></li>
+                    <li><a href="/collections/gifting">Gifting</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
@@ -174,6 +178,8 @@ Together with Tanya, she has introduced workshops and hands-on experiences that 
                     <li><a href="/#collections">Diwali Collection</a></li>
                     <li><a href="/#collections">Pichwai Collection</a></li>
                     <li><a href="/#collections">Christmas Collection</a></li>
+                    <li><a href="/#collections">Pottery Rakhi</a></li>
+                    <li><a href="/#collections">Gifting</a></li>
                 </ul>
             </div>
             <div class="footer-section">

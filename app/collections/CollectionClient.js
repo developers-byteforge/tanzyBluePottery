@@ -30,6 +30,24 @@ const COLLECTION_META = {
         heroStyle:
             'background: linear-gradient(135deg, #1a3c2a 0%, #8b2020 100%);',
         tagColor: '#c4976b'
+    },
+    'pottery-rakhi': {
+        tag: 'Handcrafted Festive Gifts',
+        title: 'Pottery Rakhi Collection',
+        description:
+            'Celebrate the bond of love with handcrafted pottery rakhis and thoughtful keepsakes made for a meaningful Raksha Bandhan.',
+        heroStyle:
+            'background: linear-gradient(135deg, #244c5a 0%, #d27b56 100%);',
+        tagColor: '#f8e5c8'
+    },
+    gifting: {
+        tag: 'Thoughtful Gifting',
+        title: 'Gifting Collection',
+        description:
+            'Find distinctive handcrafted pottery gifts for celebrations, milestones, and everyday moments worth remembering.',
+        heroStyle:
+            'background: linear-gradient(135deg, #7d4e56 0%, #d5a36a 100%);',
+        tagColor: '#fff3df'
     }
 };
 
@@ -114,6 +132,8 @@ export default function CollectionClient({ collectionKey, images }) {
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
                     <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
+                    <li><a href="/collections/pottery-rakhi">Pottery Rakhi</a></li>
+                    <li><a href="/collections/gifting">Gifting</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
@@ -138,6 +158,8 @@ export default function CollectionClient({ collectionKey, images }) {
                     <li><a href="/collections/diwali">Diwali</a></li>
                     <li><a href="/collections/pichwai">Pichwai</a></li>
                     <li><a href="/collections/christmas">Christmas</a></li>
+                    <li><a href="/collections/pottery-rakhi">Pottery Rakhi</a></li>
+                    <li><a href="/collections/gifting">Gifting</a></li>
                 </ul>
             </li>
             <li><a href="/hands-on">Hands On</a></li>
@@ -186,6 +208,8 @@ export default function CollectionClient({ collectionKey, images }) {
                     <li><a href="/collections/diwali">Diwali Collection</a></li>
                     <li><a href="/collections/pichwai">Pichwai Collection</a></li>
                     <li><a href="/collections/christmas">Christmas Collection</a></li>
+                    <li><a href="/collections/pottery-rakhi">Pottery Rakhi</a></li>
+                    <li><a href="/collections/gifting">Gifting</a></li>
                 </ul>
             </div>
             <div class="footer-section">
